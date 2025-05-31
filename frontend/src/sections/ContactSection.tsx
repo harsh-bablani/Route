@@ -23,7 +23,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch('route-v9z2.vercel.app, {
+      const res = await fetch('https://route-v9z2.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
