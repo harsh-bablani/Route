@@ -6,7 +6,11 @@ import { createTransport } from 'nodemailer';
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://route-orcin-three.vercel.app',
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+}));
 app.use(express.json()); 
 
 app.get('/', (req, res) => {
