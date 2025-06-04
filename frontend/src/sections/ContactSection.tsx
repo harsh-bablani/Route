@@ -76,7 +76,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Email Address</h4>
-                  <p className="text-gray-600">feverroute@gmail.com</p>
+                  <p className="text-gray-600">care@routefever.com</p>
                 </div>
               </div>
               <div className="flex items-start">
