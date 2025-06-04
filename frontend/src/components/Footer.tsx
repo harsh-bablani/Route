@@ -55,7 +55,7 @@ const Footer = () => {
                   href="mailto:care@routefever.com" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  feverroute@gmail.com
+                  care@routefever.com
                 </a>
               </li>
               <li className="flex items-start">
