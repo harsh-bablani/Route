@@ -52,7 +52,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <Mail size={20} className="mr-2 mt-1 text-amber-500" />
                 <a 
-                  href="mailto:feverroute@gmail.com" 
+                  href="mailto:care@routefever.com" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   feverroute@gmail.com
