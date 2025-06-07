@@ -23,7 +23,7 @@ const ContactSection = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch('https://route-v9z2.vercel.app', {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -95,7 +95,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Our Office</h4>
-                  <p className="text-gray-600">3 / 373 Malviya nagar</p>
+                  <p className="text-gray-600">3 / 373 Malviya Nagar</p>
                   <p className="text-gray-600">Jaipur 302017</p>
                 </div>
               </div>
