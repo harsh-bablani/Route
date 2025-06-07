@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-    origin: 'https://route-backend.onrender.com',
+    origin: 'https://route-orcin-three.vercel.app',
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
 }));
