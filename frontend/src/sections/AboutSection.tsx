@@ -37,8 +37,8 @@ const AboutSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
-                <div className="text-amber-500 font-bold text-4xl mb-2">2+</div>
-                <div className="text-gray-700 font-medium">Years of Experience</div>
+                <div className="text-amber-500 font-bold text-4xl mb-2">20+</div>
+                <div className="text-gray-700 font-medium">Countries</div>
               </div>
               <div className="flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300">
                 <div className="text-amber-500 font-bold text-4xl mb-2">1000+</div>
