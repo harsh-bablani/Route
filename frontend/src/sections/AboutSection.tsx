@@ -22,7 +22,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <h3 className="text-2xl font-semibold mb-4 text-gray-800">
-              Crafting Perfect Travel Experiences Since 2015
+              Crafting Perfect Travel Experiences
             </h3>
             <p className="text-gray-600 mb-6">
               At RouteFever, we're passionate about creating extraordinary travel experiences that inspire,
