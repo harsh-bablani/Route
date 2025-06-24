@@ -69,7 +69,6 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-gray-50 p-8 rounded-lg shadow-md transform transition-transform duration-300 hover:-translate-y-1">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800">Connect With Us</h3>
-              <h3 className="text-2xl font-semibold mb-6 text-gray-800">Routefever Travels Pvt. Ltd.</h3>
             <div className="space-y-6">
               <div className="flex items-start">
                 <div className="bg-amber-500 p-3 rounded-lg mr-4">
@@ -95,7 +94,7 @@ const ContactSection = () => {
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-medium text-gray-800">Our Office</h4>
+                  <h4 className="font-medium text-gray-800">Routefever Travels Pvt. Ltd.</h4>
                   <p className="text-gray-600">3 / 373 Malviya Nagar</p>
                   <p className="text-gray-600">Jaipur 302017</p>
                 </div>
