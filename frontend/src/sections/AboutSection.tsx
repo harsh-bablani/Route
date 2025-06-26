@@ -1,5 +1,5 @@
-    import img1 from '../assets/img1.jpeg';
-import img2 from '../assets/img2.jpeg';
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img2.jpg';
 import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 
@@ -56,32 +56,32 @@ const AboutSection = () => {
           <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-64">
-                <img 
-                  src={img1} 
-                  alt="Travel Experience 1" 
+                <img
+                  src={img1}
+                  alt="Travel Experience 1"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-64">
-                <img 
-                  src={img2} 
-                  alt="Travel Experience 2" 
+                <img
+                  src={img2}
+                  alt="Travel Experience 2"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                 />
               </div>
             </div>
             <div className="space-y-4 mt-6">
               <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-64">
-                <img 
-                  src={img3} 
-                  alt="Travel Experience 3" 
+                <img
+                  src={img3}
+                  alt="Travel Experience 3"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <div className="overflow-hidden rounded-lg shadow-lg h-48 md:h-64">
-                <img 
-                  src={img4} 
-                  alt="Travel Experience 4" 
+                <img
+                  src={img4}
+                  alt="Travel Experience 4"
                   className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
                 />
               </div>
