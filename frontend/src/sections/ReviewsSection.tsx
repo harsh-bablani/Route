@@ -1,59 +1,45 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
-import avatar1 from '../assets/review priya.jpeg';
-import avatar2 from '../assets/review raj.jpeg';
-import avatar3 from '../assets/review anita desai.jpeg';
-import avatar4 from '../assets/review vikram singh.jpeg';
-import avatar5 from '../assets/review meera patel.jpeg';
+import avatar1 from '../assets/Praveen.jpg';
+import avatar2 from '../assets/Vineet.jpg';
+import avatar4 from '../assets/Satnam.jpg';
+import avatar3 from '../assets/Priyank Pathak.jpg';
 
 
 const reviews = [
   {
     id: 1,
-    name: "Priya Sharma",
+    name: "Praveen Bahal",
     avatar: avatar1,
     rating: 5,
-    destination: "Thailand",
-    date: "January 15, 2025",
-    comment: "My trip to Thailand with RouteFever was absolutely amazing!..."
+    destination: "Dubai",
+    comment: "My trip to Dubai with RouteFever was absolutely amazing!..."
   },
   {
     id: 2,
-    name: "Raj Malhotra",
+    name: "Vineet Khanna",
     avatar: avatar2,
     rating: 5,
-    destination: "Bali",
-    date: "February 3, 2025",
-    comment: "RouteFever made our honeymoon in Bali absolutely magical!..."
-  },
-  {
-    id: 3,
-    name: "Anita Desai",
-    avatar: avatar3,
-    rating: 4,
     destination: "Dubai",
-    date: "March 22, 2025",
-    comment: "Our family trip to Dubai was well-organized by RouteFever..."
+    comment: "RouteFever made our Vacation in Dubai absolutely magical!..."
   },
   {
     id: 4,
-    name: "Vikram Singh",
+    name: "Satnam Singh",
     avatar: avatar4,
     rating: 5,
-    destination: "Vietnam",
-    date: "April 10, 2025",
-    comment: "Vietnam was on my bucket list for years, and RouteFever made it unforgettable..."
+    destination: "Sikkim",
+    comment: "Sikkim was on my bucket list for years, and RouteFever made it unforgettable..."
   },
   {
-    id: 5,
-    name: "Meera Patel",
-    avatar: avatar5,
+    id: 3,
+    name: "Satnam Singh",
+    avatar: avatar3,
     rating: 5,
-    destination: "Malaysia",
-    date: "May 5, 2025",
-    comment: "My solo trip to Malaysia was perfectly arranged by RouteFever..."
-  }
+    destination: "Bali",
+    comment: "Bali was my best place ever, and RouteFever helped me to enjoy my vacation"
+  },
 ];
 
 const ReviewsSection = () => {
@@ -91,9 +77,9 @@ const ReviewsSection = () => {
 
   const renderStars = (rating: number) => {
     return Array(5).fill(0).map((_, i) => (
-      <Star 
-        key={i} 
-        className={`w-4 h-4 ${i < rating ? 'text-amber-500 fill-amber-500' : 'text-gray-300'}`} 
+      <Star
+        key={i}
+        className={`w-4 h-4 ${i < rating ? 'text-amber-500 fill-amber-500' : 'text-gray-300'}`}
       />
     ));
   };
@@ -115,9 +101,9 @@ const ReviewsSection = () => {
               <div key={review.id} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
                 <div className="bg-white p-6 rounded-lg shadow-md h-full flex flex-col">
                   <div className="flex items-center mb-4">
-                    <img 
-                      src={review.avatar} 
-                      alt={review.name} 
+                    <img
+                      src={review.avatar}
+                      alt={review.name}
                       className="w-14 h-14 rounded-full object-cover mr-4 border-2 border-amber-500"
                     />
                     <div>
@@ -134,27 +120,25 @@ const ReviewsSection = () => {
             ))}
           </div>
 
-          <button 
+          <button
             onClick={handlePrev}
             disabled={startIndex === 0}
-            className={`absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white p-2 rounded-full shadow-md ${
-              startIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
-            }`}
+            className={`absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white p-2 rounded-full shadow-md ${startIndex === 0 ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
+              }`}
           >
             <ChevronLeft className="w-6 h-6 text-gray-800" />
           </button>
 
-          <button 
+          <button
             onClick={handleNext}
             disabled={startIndex >= reviews.length - (windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1)}
-            className={`absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white p-2 rounded-full shadow-md ${
-              startIndex >= reviews.length - (windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
-            }`}
+            className={`absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white p-2 rounded-full shadow-md ${startIndex >= reviews.length - (windowWidth >= 1024 ? 3 : windowWidth >= 768 ? 2 : 1) ? 'opacity-50 cursor-not-allowed' : 'hover:bg-gray-100'
+              }`}
           >
             <ChevronRight className="w-6 h-6 text-gray-800" />
           </button>
         </div>
-        
+
         <div className="mt-8 text-center">
         </div>
       </div>
