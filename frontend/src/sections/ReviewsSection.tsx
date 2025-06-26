@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
 
 import avatar1 from '../assets/Praveen.jpg';
 import avatar2 from '../assets/Vineet.jpg';
-import avatar4 from '../assets/Satnam.jpg';
+import avatar4 from '../assets/Satnam Singh.jpg';
 import avatar3 from '../assets/Priyank Pathak.jpg';
 
 
