@@ -34,7 +34,7 @@ const reviews = [
   },
   {
     id: 3,
-    name: "Satnam Singh",
+    name: "Priyank Pathak",
     avatar: avatar3,
     rating: 5,
     destination: "Bali",
