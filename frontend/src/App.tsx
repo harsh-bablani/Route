@@ -16,6 +16,8 @@ const TermsPage = lazy(() => import('./pages/TermsPage'));
 const RefundPage = lazy(() => import('./pages/RefundPage'));
 const ContactNowPage = lazy(() => import('./pages/ContactNowPage'));
 const AboutCompanyPage = lazy(() => import('./pages/AboutCompanyPage'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
               <Route path="/refund" element={<RefundPage />} />
               <Route path="/contact-now" element={<ContactNowPage />} />
               <Route path="/about-company" element={<AboutCompanyPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<BlogPostPage />} />
             </Routes>
           </Suspense>
         </main>

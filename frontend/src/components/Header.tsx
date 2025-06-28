@@ -92,6 +92,13 @@ const Header = () => {
           >
             REVIEWS
           </button>
+          <Link
+            to="/blog"
+            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
+            BLOG
+          </Link>
           <button
             onClick={() => handleNav('contact')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
@@ -142,6 +149,13 @@ const Header = () => {
           >
             REVIEWS
           </button>
+          <Link
+            to="/blog"
+            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            onClick={() => setIsOpen(false)}
+          >
+            BLOG
+          </Link>
           <button
             onClick={() => handleNav('contact')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
