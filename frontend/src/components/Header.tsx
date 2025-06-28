@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/Route_Fever_-_Logo.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,11 +35,13 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <img
-            src={logo}
-            alt="RouteFever Logo"
-            className="h-16 w-auto object-contain"
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="RouteFever Logo"
+              className="h-16 w-auto object-contain cursor-pointer"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
