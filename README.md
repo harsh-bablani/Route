@@ -54,7 +54,7 @@ ROUTE-1/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/routefever.git
+git clone https://github.com/harsh-bablani/Route.git
 cd routefever
 ```
 
