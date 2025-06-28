@@ -76,7 +76,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Email Address</h4>
-                  <p className="text-gray-600">care@routefever.com</p>
+                  <a href="mailto:care@routefever.com" className="text-gray-600 hover:text-amber-500 transition-colors underline">care@routefever.com</a>
                 </div>
               </div>
               <div className="flex items-start">
@@ -85,8 +85,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Phone Number</h4>
-                  <p className="text-gray-600">+91 98280 22224</p>
-                  <p className="text-gray-600">WhatsApp: +91 98280 22224</p>
+                  <a href="tel:+919828022224" className="text-gray-600 hover:text-amber-500 transition-colors underline block">+91 98280 22224</a>
+                  <a href="https://wa.me/919828022224" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-amber-500 transition-colors underline block">WhatsApp: +91 98280 22224</a>
                 </div>
               </div>
               <div className="flex items-start">
@@ -95,8 +95,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Routefever Travels Pvt. Ltd.</h4>
-                  <p className="text-gray-600">3 / 373 Malviya Nagar</p>
-                  <p className="text-gray-600">Jaipur 302017</p>
+                  <p className="text-gray-600">3 / 373 Malviya Nagar, Jaipur 302017</p>
                 </div>
               </div>
             </div>
