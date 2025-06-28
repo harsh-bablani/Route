@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import logo from '../assets/Route_Fever_-_Logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,12 +22,26 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Helper to scroll to section after navigation
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100); // Delay to ensure DOM is ready
+  };
+
+  // Handles navigation and scrolling
+  const handleNav = (sectionId: string) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation, then scroll
+      setTimeout(() => scrollToSection(sectionId), 300);
+    } else {
+      scrollToSection(sectionId);
     }
+    setIsOpen(false);
   };
 
   return (
@@ -47,37 +63,37 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
           <button
-            onClick={() => scrollToSection('home')}
+            onClick={() => handleNav('home')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             HOME
           </button>
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => handleNav('about')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             ABOUT US
           </button>
           <button
-            onClick={() => scrollToSection('services')}
+            onClick={() => handleNav('services')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             OUR SERVICES
           </button>
           <button
-            onClick={() => scrollToSection('destinations')}
+            onClick={() => handleNav('destinations')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             DESTINATIONS
           </button>
           <button
-            onClick={() => scrollToSection('reviews')}
+            onClick={() => handleNav('reviews')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             REVIEWS
           </button>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={() => handleNav('contact')}
             className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
           >
             CONTACT US
@@ -97,37 +113,37 @@ const Header = () => {
       {isOpen && (
         <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full py-4 px-4 flex flex-col space-y-4">
           <button
-            onClick={() => scrollToSection('home')}
+            onClick={() => handleNav('home')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             HOME
           </button>
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => handleNav('about')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             ABOUT US
           </button>
           <button
-            onClick={() => scrollToSection('services')}
+            onClick={() => handleNav('services')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             OUR SERVICES
           </button>
           <button
-            onClick={() => scrollToSection('destinations')}
+            onClick={() => handleNav('destinations')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             DESTINATIONS
           </button>
           <button
-            onClick={() => scrollToSection('reviews')}
+            onClick={() => handleNav('reviews')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             REVIEWS
           </button>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={() => handleNav('contact')}
             className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
           >
             CONTACT US
