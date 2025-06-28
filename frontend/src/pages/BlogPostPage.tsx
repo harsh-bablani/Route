@@ -152,25 +152,6 @@ const BlogPostPage = () => {
               ))}
             </div>
           </div>
-
-          {/* Share Section */}
-          <div className="mt-8 pt-8 border-t border-gray-200">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">Share this article:</h3>
-            <div className="flex space-x-4">
-              <button className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-                <Facebook className="w-4 h-4" />
-                <span>Facebook</span>
-              </button>
-              <button className="flex items-center space-x-2 bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition-colors">
-                <Twitter className="w-4 h-4" />
-                <span>Twitter</span>
-              </button>
-              <button className="flex items-center space-x-2 bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-colors">
-                <Linkedin className="w-4 h-4" />
-                <span>LinkedIn</span>
-              </button>
-            </div>
-          </div>
         </div>
 
         {/* Related Posts */}
