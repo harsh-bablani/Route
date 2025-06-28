@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Mail, Phone } from 'lucide-react';
 import logo from '../assets/Route_Fever_-_Logo.png';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -37,7 +38,7 @@ const Footer = () => {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4 text-amber-500">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
               <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Our Services</a></li>
               <li><a href="#destinations" className="text-gray-400 hover:text-white transition-colors">Destinations</a></li>
@@ -49,10 +50,10 @@ const Footer = () => {
           <div className="mb-8">
             <h3 className="text-xl font-semibold mb-4 text-amber-500">More</h3>
             <ul className="space-y-2">
-              <li><a href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
-              <li><a href="/refund" className="text-gray-400 hover:text-white transition-colors">Refund & Cancellation Policy</a></li>
-              <li><a href="/contact-now" className="text-gray-400 hover:text-white transition-colors">Contact Now</a></li>
-              <li><a href="/about-company" className="text-gray-400 hover:text-white transition-colors">About Company</a></li>
+              <li><Link to="/terms" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</Link></li>
+              <li><Link to="/refund" className="text-gray-400 hover:text-white transition-colors">Refund & Cancellation Policy</Link></li>
+              <li><Link to="/contact-now" className="text-gray-400 hover:text-white transition-colors">Contact Now</Link></li>
+              <li><Link to="/about-company" className="text-gray-400 hover:text-white transition-colors">About Company</Link></li>
             </ul>
           </div>
 
