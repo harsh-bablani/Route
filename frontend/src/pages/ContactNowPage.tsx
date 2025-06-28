@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const ContactNowPage = () => (
   <main className="pt-20 px-4 max-w-md mx-auto">
-    <h1 className="text-3xl font-bold mb-8 text-amber-500 text-center">Get in Touch with us</h1>
+    <h1 className="text-3xl font-bold mb-8 text-amber-500 text-center">Get in Touch with us!</h1>
     <div className="space-y-8">
       {/* Email Address */}
       <div className="flex items-start space-x-4">
