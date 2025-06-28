@@ -151,7 +151,7 @@ const Header = () => {
           </button>
           <Link
             to="/blog"
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className="w-full text-left text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
             onClick={() => setIsOpen(false)}
           >
             BLOG
