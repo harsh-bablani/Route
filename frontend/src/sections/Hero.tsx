@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import heroParadise from '../assets/Hero paradise.jpeg';
 import heroAdventure from '../assets/Hero adventure.jpeg';
 import heroTravel from '../assets/Hero Travel.jpeg';
+import whatsapp3d from '../assets/WhatsApp.svg.webp';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -80,13 +81,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center bg-[#25D366] text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-[#1ebe57] transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
-              <svg className="w-8 h-8 mr-2" viewBox="0 0 48 48" fill="none">
-                <g>
-                  <circle cx="24" cy="24" r="22" fill="#fff" />
-                  <circle cx="24" cy="24" r="19" fill="#25D366" />
-                  <path d="M34.6 29.2c-.5-.2-2.9-1.4-3.3-1.6-.4-.2-.7-.2-1 .2-.3.4-1.1 1.6-1.4 1.9-.3.3-.5.4-1 .1-2.7-1.3-4.5-3.7-5.1-4.3-.4-.5-.1-.7.3-1.1.3-.3.5-.6.8-1 .1-.2.1-.4 0-.6-.1-.2-.9-2.2-1.2-3-.3-.7-.6-.6-.9-.6-.2 0-.4 0-.6 0-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7 0 1.6 1.2 3.1 1.4 3.3.2.2 2.3 3.6 5.7 4.9.8.3 1.4.5 1.9.6.8.2 1.5.2 2 .1.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.7-.1-.2-.4-.3-.9-.5z" fill="#fff" />
-                </g>
-              </svg>
+              <img src={whatsapp3d} alt="WhatsApp" className="w-8 h-8 mr-2" />
               WhatsApp
             </a>
           </div>
