@@ -50,7 +50,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-4 text-amber-500">More</h3>
             <ul className="space-y-2">
               <li><a href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
-              <li><a href="/refund" className="text-gray-400 hover:text-white transition-colors">Refund Policy</a></li>
+              <li><a href="/refund" className="text-gray-400 hover:text-white transition-colors">Refund & Cancellation Policy</a></li>
               <li><a href="/contact-now" className="text-gray-400 hover:text-white transition-colors">Contact Now</a></li>
               <li><a href="/about-company" className="text-gray-400 hover:text-white transition-colors">About Company</a></li>
             </ul>
