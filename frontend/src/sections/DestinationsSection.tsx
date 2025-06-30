@@ -92,19 +92,18 @@ const DestinationsSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {destinations.map((destination, index) => (
-            <div 
+            <div
               key={destination.id}
               className="bg-white rounded-xl overflow-hidden shadow-lg transform transition-all duration-300 hover:shadow-xl"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div className="relative overflow-hidden h-56">
-                <img 
-                  src={destination.image} 
-                  alt={destination.name} 
-                  className={`w-full h-full object-cover transition-transform duration-700 ${
-                    hoveredIndex === index ? 'scale-110' : 'scale-100'
-                  }`}
+                <img
+                  src={destination.image}
+                  alt={destination.name}
+                  className={`w-full h-full object-cover transition-transform duration-700 ${hoveredIndex === index ? 'scale-110' : 'scale-100'
+                    }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70" />
                 <div className="absolute bottom-4 left-4 text-white">
@@ -116,8 +115,8 @@ const DestinationsSection = () => {
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-gray-500 text-sm font-medium">{destination.duration}</span>
                 </div>
-                <button 
-                  onClick={scrollToContact}
+                <button
+                  onClick={() => window.open('https://wa.me/919828022224', '_blank')}
                   className="w-full bg-amber-500 text-white py-2 rounded-md hover:bg-amber-600 transition-colors font-medium"
                 >
                   Enquire Now
@@ -126,9 +125,9 @@ const DestinationsSection = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
-          <button 
+          <button
             onClick={scrollToContact}
             className="inline-flex items-center justify-center bg-transparent text-amber-500 font-semibold hover:text-amber-600 transition-colors text-lg"
           >
