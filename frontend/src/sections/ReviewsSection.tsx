@@ -5,7 +5,8 @@ import avatar1 from '../assets/Praveen.jpg';
 import avatar2 from '../assets/Vineet.jpg';
 import avatar4 from '../assets/Satnam Singh.jpg';
 import avatar3 from '../assets/Priyank Pathak.jpg';
-
+import avatar5 from '../assets/KK Agarwal.jpg';
+import avatar6 from '../assets/Rahul Rai.jpg';
 
 const reviews = [
   {
@@ -39,6 +40,22 @@ const reviews = [
     rating: 5,
     destination: "Bali",
     comment: "Bali was my best place ever, and RouteFever helped me to enjoy my vacation"
+  },
+  {
+    id: 5,
+    name: "KK Agarwal",
+    avatar: avatar5,
+    rating: 5,
+    destination: "Goa",
+    comment: "Goa trip was fantastic! RouteFever took care of everything and made it memorable. Highly recommended!"
+  },
+  {
+    id: 6,
+    name: "Rahul Rai",
+    avatar: avatar6,
+    rating: 5,
+    destination: "Kumbhalgarh",
+    comment: "Kumbhalgarh was a wonderful experience. Thanks to RouteFever for the seamless arrangements and great support."
   },
 ];
 
@@ -108,7 +125,7 @@ const ReviewsSection = () => {
                     />
                     <div>
                       <h3 className="font-semibold text-gray-800">{review.name}</h3>
-                      <p className="text-sm text-gray-500">{review.destination} • {review.date}</p>
+                      <p className="text-sm text-gray-500">{review.destination}</p>
                       <div className="flex mt-1">
                         {renderStars(review.rating)}
                       </div>
