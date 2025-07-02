@@ -32,7 +32,7 @@ const ContactNowPage = () => (
         </div>
         <div>
           <div className="font-bold text-lg">Routefever Travels Pvt. Ltd.</div>
-          <div className="text-gray-600">3 / 373 Malviya Nagar<br />Jaipur 302017</div>
+          <div className="text-gray-600">3 / 373 Malviya Nagar<br />Jaipur 302017<br />KH no. 2766, Sector-13, Gurgaon, Haryana 122001</div>
         </div>
       </div>
     </div>

@@ -95,7 +95,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Routefever Travels Pvt. Ltd.</h4>
-                  <p className="text-gray-600">3 / 373 Malviya Nagar, Jaipur 302017</p>
+                  <p className="text-gray-600">3 / 373 Malviya Nagar, Jaipur 302017<br />KH no. 2766, Sector-13, Gurgaon, Haryana 122001</p>
                 </div>
               </div>
             </div>
