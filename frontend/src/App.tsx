@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
 // Lazy-loaded sections
 const Hero = lazy(() => import('./sections/Hero'));
@@ -49,6 +50,7 @@ function App() {
           </Suspense>
         </main>
         <Footer />
+        <Chatbot />
       </div>
     </Router>
   );
