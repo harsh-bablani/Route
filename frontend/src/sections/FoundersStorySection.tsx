@@ -1,15 +1,45 @@
 import React from 'react';
 import founderImage from '../assets/Sanjay Bablani.jpg';
+import { Mail, Instagram, Linkedin } from 'lucide-react';
 
 const FoundersStorySection = () => (
   <section id="founder-story" className="py-20 bg-white">
     <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
-      <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-10 flex justify-center w-full md:w-auto">
+      <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-10 flex flex-col items-center w-full md:w-auto">
         <img
           src={founderImage}
           alt="Sanjay Bablani"
-          className="rounded-xl shadow-lg w-64 h-64 object-cover border-4 border-amber-500"
+          className="rounded-xl shadow-lg w-64 h-64 object-cover border-4 border-amber-500 mb-4"
         />
+        <h3 className="text-2xl font-bold text-gray-800 mb-2">Sanjay Bablani</h3>
+        <div className="flex flex-col items-center space-y-2">
+          <a
+            href="mailto:sanjay.bablani@routefever.com"
+            className="flex items-center text-gray-700 hover:text-amber-500 transition-colors text-base"
+          >
+            <Mail className="w-5 h-5 mr-2" /> sanjay.bablani@routefever.com
+          </a>
+          <div className="flex space-x-4 mt-2">
+            <a
+              href="https://www.instagram.com/sanjay_bablani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-amber-500 transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-6 h-6" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/sanjay-bablani-615a6517/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-700 hover:text-amber-500 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
       </div>
       <div className="max-w-2xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
