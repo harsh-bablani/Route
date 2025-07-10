@@ -7,6 +7,10 @@ import avatar4 from '../assets/Satnam Singh.jpg';
 import avatar3 from '../assets/Priyank Pathak.jpg';
 import avatar5 from '../assets/KK Agarwal.jpg';
 import avatar6 from '../assets/Rahul Rai.jpg';
+import avatar7 from '../assets/Tanuj Khanna.jpg';
+import avatar8 from '../assets/Venky.jpg';
+import avatar9 from '../assets/Saloni and Kshitiz.jpg';
+import avatar10 from '../assets/Anjali and Nimish.jpg';
 
 const reviews = [
   {
@@ -56,6 +60,38 @@ const reviews = [
     rating: 5,
     destination: "Kumbhalgarh",
     comment: "Kumbhalgarh was a wonderful experience. Thanks to RouteFever for the seamless arrangements and great support."
+  },
+  {
+    id: 7,
+    name: "Tanuj Khanna",
+    avatar: avatar7,
+    rating: 5,
+    destination: "Dubai",
+    comment: "RouteFever turned our Dubai adventure into a seamless blend of excitement and comfort. Every detail was handled with care, and we discovered hidden gems we’d never have found on our own."
+  },
+  {
+    id: 8,
+    name: "Venky Chopra",
+    avatar: avatar8,
+    rating: 5,
+    destination: "Dubai",
+    comment: "From the moment we landed in Dubai, RouteFever’s planning made us feel like VIPs. The itinerary was fresh and full of surprises—truly a step above the usual travel experience."
+  },
+  {
+    id: 9,
+    name: "Saloni and Kshitiz",
+    avatar: avatar9,
+    rating: 5,
+    destination: "Andaman",
+    comment: "Our Andaman trip was pure bliss! RouteFever crafted a journey that balanced adventure and relaxation perfectly. We came back with memories—and stories—we’ll cherish forever."
+  },
+  {
+    id: 10,
+    name: "Anjali and Nimish",
+    avatar: avatar10,
+    rating: 5,
+    destination: "Thailand",
+    comment: "Thailand with RouteFever was a revelation. Every day brought something new, from local food tours to tranquil beaches. We felt truly cared for throughout our travels."
   },
 ];
 
