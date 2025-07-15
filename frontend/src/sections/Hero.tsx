@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-// Import local images from the assets folder
+// Import local images from the assets fol
 import heroParadise from '../assets/Hero paradise.jpeg';
 import heroAdventure from '../assets/Hero adventure.jpeg';
 import heroTravel from '../assets/Hero Travel.jpeg';
