@@ -4,29 +4,38 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper/modules';
 
-// Example images (replace with your own in assets/exclusive-deals/)
-import deal1 from '../assets/img1.jpeg';
-import deal2 from '../assets/img2.jpeg';
-import deal3 from '../assets/img3.jpeg';
+// Example destination images (replace with your own in assets/exclusive-deals/)
+import bali from '../assets/bali.jpeg';
+import dubai from '../assets/dubai.jpeg';
+import thailand from '../assets/thailand.jpeg';
+import srilanka from '../assets/srilanka.jpeg';
+import singapore from '../assets/singapore.jpeg';
 
-const deals = [
+const destinations = [
   {
-    image: deal1,
-    title: 'Bali Adventure',
-    description: 'Experience the magic of Bali with exclusive discounts on resorts and tours.',
-    link: '#',
+    image: bali,
+    name: 'Bali',
+    offer: 'Save 20% on Bali adventure packages this month only!'
   },
   {
-    image: deal2,
-    title: 'Dubai Luxury Escape',
-    description: 'Enjoy luxury hotels and desert safaris at unbeatable prices.',
-    link: '#',
+    image: dubai,
+    name: 'Dubai',
+    offer: 'Exclusive Dubai luxury tours with free desert safari.'
   },
   {
-    image: deal3,
-    title: 'Thailand Beach Special',
-    description: 'Book now for special rates on Thailand’s best beaches and island hopping.',
-    link: '#',
+    image: thailand,
+    name: 'Thailand',
+    offer: 'Special rates for Thailand island hopping experiences.'
+  },
+  {
+    image: srilanka,
+    name: 'Sri Lanka',
+    offer: 'Sri Lanka cultural tours at unbeatable prices.'
+  },
+  {
+    image: singapore,
+    name: 'Singapore',
+    offer: 'Singapore city breaks with complimentary night tour.'
   },
 ];
 
@@ -34,7 +43,7 @@ const ExclusiveDealsSection = () => (
   <section className="py-16 bg-white">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-800">
-        Exclusive <span className="text-amber-500">Deals</span>
+        Exclusive <span className="text-amber-500">Deals</span> on Destinations
       </h2>
       <Swiper
         modules={[Navigation, Pagination]}
@@ -49,19 +58,18 @@ const ExclusiveDealsSection = () => (
         }}
         className="pb-10"
       >
-        {deals.map((deal, idx) => (
+        {destinations.map((dest, idx) => (
           <SwiperSlide key={idx}>
             <div className="bg-amber-50 rounded-xl shadow-lg overflow-hidden flex flex-col h-full">
-              <img src={deal.image} alt={deal.title} className="w-full h-48 object-cover" />
+              <img src={dest.image} alt={dest.name} className="w-full h-48 object-cover" />
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">{deal.title}</h3>
-                <p className="text-gray-600 mb-4 flex-grow">{deal.description}</p>
-                <a
-                  href={deal.link}
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">{dest.name}</h3>
+                <p className="text-gray-600 mb-4 flex-grow">{dest.offer}</p>
+                <button
                   className="inline-block mt-auto bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-4 rounded transition-colors text-center"
                 >
-                  View Deal
-                </a>
+                  View Details
+                </button>
               </div>
             </div>
           </SwiperSlide>
