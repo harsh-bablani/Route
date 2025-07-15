@@ -68,7 +68,12 @@ const ExclusiveDealsSection = () => {
           {destinations.map((dest, idx) => (
             <SwiperSlide key={idx}>
               <div className="bg-amber-50 rounded-xl shadow-lg overflow-hidden flex flex-col h-full">
-                <img src={dest.image} alt={dest.name} className="w-full h-48 object-cover" />
+                <img
+                  src={dest.image}
+                  alt={dest.name}
+                  className="w-full h-48 object-cover cursor-pointer"
+                  onClick={() => navigate(dest.route)}
+                />
                 <div className="p-6 flex flex-col flex-grow">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">{dest.name}</h3>
                   <p className="text-gray-600 mb-4 flex-grow">{dest.offer}</p>
