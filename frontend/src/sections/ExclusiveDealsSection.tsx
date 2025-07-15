@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Pagination } from 'swiper/modules';
 
-// Example destination images (replace with your own in assets/exclusive-deals/)
+// Exa destination images (replace with your own in assets/exclusive-deals/)
 import bali from '../assets/bali.jpeg';
 import dubai from '../assets/dubai.jpeg';
 import thailand from '../assets/thailand.jpeg';
