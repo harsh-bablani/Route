@@ -8,6 +8,7 @@ import Chatbot from './components/Chatbot';
 const Hero = lazy(() => import('./sections/Hero'));
 const AboutSection = lazy(() => import('./sections/AboutSection'));
 const FoundersStorySection = lazy(() => import('./sections/FoundersStorySection'));
+const ExclusiveDealsSection = lazy(() => import('./sections/ExclusiveDealsSection'));
 const DestinationsSection = lazy(() => import('./sections/DestinationsSection'));
 const ServicesSection = lazy(() => import('./sections/ServicesSection'));
 const ReviewsSection = lazy(() => import('./sections/ReviewsSection'));
@@ -35,6 +36,7 @@ function App() {
                   <Hero />
                   <AboutSection />
                   <FoundersStorySection />
+                  <ExclusiveDealsSection />
                   <DestinationsSection />
                   <ServicesSection />
                   <ReviewsSection />
