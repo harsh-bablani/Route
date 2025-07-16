@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="mb-8">
-            <img src={logo} alt="RouteFever Logo" className="h-16 mb-4 object-contain" />
+            <img src={logo} alt="RouteFever Logo" className="h-16 mb-4 object-contain drop-shadow-[0_2px_12px_rgba(255,255,255,0.7)]" />
             <p className="text-gray-400 mb-4">
               Explore the world with RouteFever. We bring you unforgettable travel experiences
               with personalized itineraries, luxury accommodations, and expert guides.
