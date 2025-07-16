@@ -64,44 +64,44 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <button
             onClick={() => handleNav('home')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             HOME
           </button>
           <button
             onClick={() => handleNav('about')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             ABOUT US
           </button>
           <button
             onClick={() => handleNav('services')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             OUR SERVICES
           </button>
           <button
             onClick={() => handleNav('destinations')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             DESTINATIONS
           </button>
           <button
             onClick={() => handleNav('reviews')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             REVIEWS
           </button>
           <Link
             to="/blog"
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
             onClick={() => setIsOpen(false)}
           >
             BLOG
           </Link>
           <button
             onClick={() => handleNav('contact')}
-            className="text-gray-800 hover:text-amber-500 font-medium transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium transition-colors`}
           >
             CONTACT US
           </button>
@@ -118,47 +118,47 @@ const Header = () => {
 
       {/* Mobile Navigation Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full py-4 px-4 flex flex-col space-y-4">
+        <div className={`md:hidden ${scrolled ? 'bg-white' : 'bg-black bg-opacity-80'} shadow-lg absolute top-full left-0 w-full py-4 px-4 flex flex-col space-y-4`}>
           <button
             onClick={() => handleNav('home')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             HOME
           </button>
           <button
             onClick={() => handleNav('about')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             ABOUT US
           </button>
           <button
             onClick={() => handleNav('services')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             OUR SERVICES
           </button>
           <button
             onClick={() => handleNav('destinations')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             DESTINATIONS
           </button>
           <button
             onClick={() => handleNav('reviews')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             REVIEWS
           </button>
           <Link
             to="/blog"
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors text-center w-full"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors text-center w-full`}
             onClick={() => setIsOpen(false)}
           >
             BLOG
           </Link>
           <button
             onClick={() => handleNav('contact')}
-            className="text-gray-800 hover:text-amber-500 font-medium py-2 transition-colors"
+            className={`${scrolled ? 'text-gray-800' : 'text-white'} hover:text-amber-500 font-medium py-2 transition-colors`}
           >
             CONTACT US
           </button>
