@@ -15,56 +15,56 @@ const destinations = [
     name: "Thailand",
     image: thailandImg,
     description: "Experience the perfect blend of ancient temples, vibrant street life, and pristine beaches in Thailand.",
-    duration: "7-10 Days"
+    duration: "3-10 Days"
   },
   {
     id: 2,
     name: "Vietnam",
     image: vietnamImg,
     description: "Discover Vietnam's rich history, breathtaking landscapes, and delicious cuisine.",
-    duration: "8-12 Days"
+    duration: "3-12 Days"
   },
   {
     id: 3,
     name: "Dubai",
     image: dubaiImg,
     description: "Explore the futuristic cityscape, luxury shopping, and desert adventures in Dubai.",
-    duration: "5-8 Days"
+    duration: "3-8 Days"
   },
   {
     id: 4,
     name: "Malaysia",
     image: malaysiaImg,
     description: "From bustling cities to serene islands, Malaysia offers diverse experiences for every traveler.",
-    duration: "6-9 Days"
+    duration: "3-9 Days"
   },
   {
     id: 5,
     name: "Bali",
     image: baliImg,
     description: "Immerse yourself in Bali's spiritual atmosphere, stunning beaches, and lush rice terraces.",
-    duration: "7-10 Days"
+    duration: "3-10 Days"
   },
   {
     id: 6,
     name: "India",
     image: indiaImg,
     description: "Experience the vibrant colors, rich heritage, and cultural diversity of incredible India.",
-    duration: "9-14 Days"
+    duration: "3-14 Days"
   },
   {
     id: 7,
     name: "Sri Lanka",
     image: srilankaImg,
     description: "Discover ancient ruins, wildlife safaris, and pristine beaches in the pearl of the Indian Ocean.",
-    duration: "7-11 Days"
+    duration: "3-11 Days"
   },
   {
     id: 8,
     name: "Singapore",
     image: singaporeImg,
     description: "Explore the perfect blend of urban sophistication and natural beauty in Singapore.",
-    duration: "4-7 Days"
+    duration: "3-7 Days"
   }
 ];
 
