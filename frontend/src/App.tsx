@@ -35,7 +35,6 @@ function App() {
               <Route path="/" element={
                 <>
                   <Hero />
-                  <BookFlightSection />
                   <AboutSection />
                   <FoundersStorySection />
                   <ExclusiveDealsSection />
@@ -45,6 +44,7 @@ function App() {
                   <ContactSection />
                 </>
               } />
+              <Route path="/book-flight" element={<BookFlightSection />} />
               {/* New landing pages */}
               <Route path="/terms" element={<TermsPage />} />
               <Route path="/refund" element={<RefundPage />} />

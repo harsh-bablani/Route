@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Plane } from 'lucide-react';
 
 // Import local images from the assets fol
 import heroParadise from '../assets/Hero paradise.jpeg';
@@ -84,6 +86,14 @@ const Hero = () => {
               <img src={whatsapp3d} alt="WhatsApp" className="w-8 h-8 mr-2" />
               WhatsApp
             </a>
+            <Link
+              to="/book-flight"
+              className="mt-4 inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
+              style={{ textDecoration: 'none' }}
+            >
+              <Plane className="w-8 h-8 mr-2" />
+              Book a Flight
+            </Link>
           </div>
         </div>
       ))}

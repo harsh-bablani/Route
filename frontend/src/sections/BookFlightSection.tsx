@@ -20,30 +20,37 @@ const BookFlightSection = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, type } = e.target;
+    let fieldValue: string | boolean = value;
+    if (type === 'checkbox' && e.target instanceof HTMLInputElement) {
+      fieldValue = e.target.checked;
+    }
     setForm(prev => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value,
+      [name]: fieldValue,
     }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = encodeURIComponent(
-      `Flight Booking Enquiry:%0A` +
-      `Trip Type: ${form.tripType}%0A` +
-      `From: ${form.from}%0A` +
-      `To: ${form.to}%0A` +
-      `Departure: ${form.departure}%0A` +
-      `${form.tripType === 'Round-trip' ? `Return: ${form.returnDate}%0A` : ''}` +
-      `Adults: ${form.adults}, Children: ${form.children}, Infants: ${form.infants}%0A` +
-      `Class: ${form.classType}%0A` +
-      `Flexible Dates: ${form.flexible ? 'Yes' : 'No'}%0A` +
-      `Direct Flights Only: ${form.direct ? 'Yes' : 'No'}%0A` +
-      `Name: ${form.name}%0A` +
-      `Email: ${form.email}%0A` +
-      `Phone: ${form.phone}%0A` +
-      `${form.special ? `Special Requests: ${form.special}%0A` : ''}`
+      `Flight Booking Enquiry\n` +
+      `--------------------------\n` +
+      `Trip Type: ${form.tripType}\n` +
+      `From: ${form.from}\n` +
+      `To: ${form.to}\n` +
+      `Departure: ${form.departure}\n` +
+      `${form.tripType === 'Round-trip' ? `Return: ${form.returnDate}\n` : ''}` +
+      `Adults: ${form.adults}\n` +
+      `Children: ${form.children}\n` +
+      `Infants: ${form.infants}\n` +
+      `Class: ${form.classType}\n` +
+      `Flexible Dates: ${form.flexible ? 'Yes' : 'No'}\n` +
+      `Direct Flights Only: ${form.direct ? 'Yes' : 'No'}\n` +
+      `Name: ${form.name}\n` +
+      `Email: ${form.email}\n` +
+      `Phone: ${form.phone}\n` +
+      (form.special ? `Special Requests: ${form.special}\n` : '')
     );
     window.open(`https://wa.me/919828022224?text=${message}`, '_blank');
   };
