@@ -13,6 +13,7 @@ const DestinationsSection = lazy(() => import('./sections/DestinationsSection'))
 const ServicesSection = lazy(() => import('./sections/ServicesSection'));
 const ReviewsSection = lazy(() => import('./sections/ReviewsSection'));
 const ContactSection = lazy(() => import('./sections/ContactSection'));
+const BookFlightSection = lazy(() => import('./sections/BookFlightSection'));
 
 // Landing pages
 const TermsPage = lazy(() => import('./pages/TermsPage'));
@@ -34,6 +35,7 @@ function App() {
               <Route path="/" element={
                 <>
                   <Hero />
+                  <BookFlightSection />
                   <AboutSection />
                   <FoundersStorySection />
                   <ExclusiveDealsSection />
