@@ -116,7 +116,12 @@ const DestinationsSection = () => {
                   <span className="text-gray-500 text-sm font-medium">{destination.duration}</span>
                 </div>
                 <button
-                  onClick={() => window.open('https://wa.me/919828022224', '_blank')}
+                  onClick={() => {
+                    const message = encodeURIComponent(
+                      `Hi, I am interested in the ${destination.name} package on RouteFever.`
+                    );
+                    window.open(`https://wa.me/919828022224?text=${message}`, '_blank');
+                  }}
                   className="w-full bg-amber-500 text-white py-2 rounded-md hover:bg-amber-600 transition-colors font-medium"
                 >
                   Enquire Now
