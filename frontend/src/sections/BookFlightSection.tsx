@@ -65,11 +65,27 @@ const BookFlightSection = () => {
           <div className="flex space-x-4">
             <div className="flex-1">
               <label className="block text-gray-700 mb-1">From</label>
-              <input type="text" name="from" value={form.from} onChange={handleChange} required className="w-full px-3 py-2 border rounded" placeholder="Departure City/Airport" />
+              <input
+                type="text"
+                name="from"
+                value={form.from}
+                onChange={handleChange}
+                required
+                className="w-full px-3 py-2 border rounded"
+                placeholder="Departure City/Airport"
+              />
             </div>
             <div className="flex-1">
               <label className="block text-gray-700 mb-1">To</label>
-              <input type="text" name="to" value={form.to} onChange={handleChange} required className="w-full px-3 py-2 border rounded" placeholder="Arrival City/Airport" />
+              <input
+                type="text"
+                name="to"
+                value={form.to}
+                onChange={handleChange}
+                required
+                className="w-full px-3 py-2 border rounded"
+                placeholder="Arrival City/Airport"
+              />
             </div>
           </div>
           <div className="flex space-x-4">
