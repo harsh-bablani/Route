@@ -76,7 +76,7 @@ const Hero = () => {
               Explore Now
             </button>
             <a
-              href="https://wa.me/919828022224"
+              href="https://wa.me/919828022224?text=Hi%2C%20I%20am%20interested%20in%20planning%20a%20trip%20with%20RouteFever."
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center bg-[#25D366] text-white px-8 py-3 rounded-full font-medium text-lg hover:bg-[#1ebe57] transform hover:scale-105 transition-all duration-300 shadow-lg"
