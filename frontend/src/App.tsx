@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 
-// Lazy-loaded sections
+// Lazy-loaded section
 const Hero = lazy(() => import('./sections/Hero'));
 const AboutSection = lazy(() => import('./sections/AboutSection'));
 const FoundersStorySection = lazy(() => import('./sections/FoundersStorySection'));
