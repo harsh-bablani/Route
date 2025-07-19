@@ -15,7 +15,7 @@ const ReviewsSection = lazy(() => import('./sections/ReviewsSection'));
 const ContactSection = lazy(() => import('./sections/ContactSection'));
 const BookFlightSection = lazy(() => import('./sections/BookFlightSection'));
 
-// Landing pages
+// Landing page
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const RefundPage = lazy(() => import('./pages/RefundPage'));
 const ContactNowPage = lazy(() => import('./pages/ContactNowPage'));
