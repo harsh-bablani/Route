@@ -7,7 +7,7 @@ const faq = [
   },
   {
     q: 'How can I book a trip?',
-    a: 'You can book a trip by filling out our contact form or messaging us on <a href="https://wa.me/919828022224" target="_blank" rel="noopener noreferrer" class="text-amber-500 underline">WhatsApp</a>.'
+    a: 'You can book a trip by filling out our <a href="#contact" class="text-amber-500 underline">contact form</a> or messaging us on <a href="https://wa.me/919828022224" target="_blank" rel="noopener noreferrer" class="text-amber-500 underline">WhatsApp</a>.'
   },
   {
     q: 'Do you provide visa assistance?',
