@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
 
-// Lazy-loaded sections
+// Lazy-loaded section
 const Hero = lazy(() => import('./sections/Hero'));
 const AboutSection = lazy(() => import('./sections/AboutSection'));
 const FoundersStorySection = lazy(() => import('./sections/FoundersStorySection'));
@@ -15,7 +15,7 @@ const ReviewsSection = lazy(() => import('./sections/ReviewsSection'));
 const ContactSection = lazy(() => import('./sections/ContactSection'));
 const BookFlightSection = lazy(() => import('./sections/BookFlightSection'));
 
-// Landing pages
+// Landing page
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const RefundPage = lazy(() => import('./pages/RefundPage'));
 const ContactNowPage = lazy(() => import('./pages/ContactNowPage'));
