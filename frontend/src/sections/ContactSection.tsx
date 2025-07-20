@@ -19,38 +19,20 @@ const ContactSection = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    try {
-      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        alert("Thank you for your message! We'll get back to you soon.");
-        setFormData({
-          name: '',
-          email: '',
-          mobile: '',
-          purpose: '',
-          location: '',
-          pax: '',
-          message: ''
-        });
-      } else {
-        alert('Error: ' + (data.message || 'Something went wrong.'));
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      alert('Something went wrong. Please try again later.');
-    }
+    const message = encodeURIComponent(
+      `Contact Enquiry\n` +
+      `--------------------------\n` +
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Mobile: ${formData.mobile}\n` +
+      `Purpose of Travel: ${formData.purpose}\n` +
+      `Destination: ${formData.location}\n` +
+      `Number of Travelers: ${formData.pax}\n` +
+      `Message: ${formData.message}`
+    );
+    window.open(`https://wa.me/919828022224?text=${message}`, '_blank');
   };
 
   return (
